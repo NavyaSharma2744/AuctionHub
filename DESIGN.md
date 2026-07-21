@@ -18,6 +18,8 @@ One asset. Play money. Server-authoritative. No blockchain, no LLMs in the tradi
    would be gambling / money transmission). Real payments, if added, are test-mode and cosmetic.
 4. **The market is never dead.** Agents provide 24/7 liquidity and drama even with zero humans.
 
+
+
 ## What we are NOT building
 
 Postgres · Redis (until scale-out) · Celery · Docker · Grafana · auth with passwords ·
@@ -41,6 +43,8 @@ Browser (static HTML/JS)                       Server (single Node/Bun + TypeScr
                                                  Agents (in-process): evolved strategies
                                                  submit orders like any other client
 ```
+
+20 * 1/sec     = 0.04 sec
 
 **Key latency idea:** decouple *ingest* (per-order, immediate) from *broadcast* (fixed tick,
 batched, delta-compressed). Clients only need the latest state → drop stale snapshots for slow
