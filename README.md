@@ -1,22 +1,16 @@
-# AuctionHub 🐑
+# React + Vite
 
-**A living, real-time artificial economy.** One market, one asset, play money. A crowd fights over
-a single price in real time — and later, evolutionary trading agents live, compete, and die inside
-it while humans try to beat them.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-No blockchain. No AI in the trading logic. No real money. Just a fast, correct market.
+Currently, two official plugins are available:
 
-> Open the page → get $1,000 fake dollars → trade the one asset everyone shares. The price moves
-> from live order flow. Watch bubbles form and a leaderboard sort out who read the herd best.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Why it exists
+## React Compiler
 
-It's the interesting 5% of a trading platform — price discovery, settlement, real-time state —
-with none of the enterprise cruft. Built to be genuinely hard in the right places (matching,
-determinism, low-latency fan-out, ledger correctness) and shareable everywhere.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-See [`DESIGN.md`](./DESIGN.md) for the full design and step-by-step build plan.
+## Expanding the ESLint configuration
 
-## Status
-
-📐 Planning done — building M1 (real-time trading core) by hand next.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
